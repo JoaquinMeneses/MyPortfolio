@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Card({ text, photo, description, link }) {
   return (
-    <div className="card w-96 bg-base-100 shadow-xl">
+    <div className="card w-96 bg-base-100 shadow-xl hover:border">
       <figure className="px-10 pt-10">
         <img src={photo} alt={text} className="rounded-xl" />
       </figure>
