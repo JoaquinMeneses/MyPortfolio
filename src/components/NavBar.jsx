@@ -13,9 +13,12 @@ export default function NavBar({ scrollPage }) {
   return (
     <div className="navbar fixed z-10">
       <div className="flex-1">
-        <a className="btn btn-ghost normal-case text-xl flex items-center">
+        <a
+          onClick={() => scrollPage("inicio")}
+          className="btn btn-ghost normal-case text-xl flex items-center"
+        >
           <img src={icon} alt="icon" className="h-8" />
-          <p>Joaquín</p>
+          <p>Joaquín Meneses</p>
         </a>
       </div>
       <div className="flex-none">
