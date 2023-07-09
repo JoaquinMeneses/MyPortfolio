@@ -1,21 +1,25 @@
 import React from "react";
 
-//Cuerpo
+//Componentes
 import NavBar from "./components/NavBar.jsx";
 import Footer from "./components/Footer.jsx";
+import { scrollPage } from "./components/Scroll.jsx";
 
-//Pages
+//Paginas
 import Inicio from "./pages/Inicio.jsx";
 import Acerca from "./pages/Acerca.jsx";
 import Habilidades from "./pages/Habilidades.jsx";
 import Experiencia from "./pages/Experiencia.jsx";
 import Contacto from "./pages/Contacto.jsx";
 
-//Componentes
-import { scrollPage } from "./components/Scroll.jsx";
+// Tipado
+type Page = {
+  id: string;
+  component: React.ComponentType<{ scrollPage: (id: string) => void }>;
+};
 
-export default function App() {
-  const pages = [
+const App: React.FC = () => {
+  const pages: Page[] = [
     { id: "inicio", component: Inicio },
     { id: "acerca", component: Acerca },
     { id: "habilidades", component: Habilidades },
@@ -34,4 +38,6 @@ export default function App() {
       <Footer />
     </div>
   );
-}
+};
+
+export default App;

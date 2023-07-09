@@ -37,8 +37,9 @@ export default function Experiencia() {
       <div className="hero-overlay bg-opacity-60"></div>
       <div className="hero-content">
         <div className="grid grid-cols-3 gap-4 my-12">
-          {experiences.map((experience) => (
+          {experiences.map((experience, index) => (
             <Card
+              key={index}
               text={experience.text}
               photo={experience.photo}
               description={experience.description}
