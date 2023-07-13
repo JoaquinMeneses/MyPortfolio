@@ -25,10 +25,10 @@ export default function NavBar({ scrollPage }) {
         <ul className="menu menu-horizontal px-1">
           {sections.map((section, index) => (
             <li key={index}>
-              <a onClick={() => scrollPage(section.id)}>
+              <p onClick={() => scrollPage(section.id)}>
                 <span className="text-[#78DD82]">#</span>
                 {section.label}
-              </a>
+              </p>
             </li>
           ))}
         </ul>
