@@ -1,16 +1,49 @@
-import React from "react";
+import CV from "../../public/CV.pdf";
 
 export default function Contacto() {
   return (
-    <div className="hero min-h-screen bg-[#293038]" id="acerca">
-      <div className="hero-content text-center text-neutral-content">
-        <div className="max-w-md text-white">
-          <p className="mb-5">En desarrollo</p>
-          <progress className="progress w-56" value={0} max="100"></progress>
-          <progress className="progress w-56" value="10" max="100"></progress>
-          <progress className="progress w-56" value="40" max="100"></progress>
-          <progress className="progress w-56" value="70" max="100"></progress>
-          <progress className="progress w-56" value="100" max="100"></progress>
+    <div className="hero min-h-screen signal" id="acerca">
+      <div className="hero-overlay bg-opacity-60"></div>
+      <div className="hero-content bg-[#293038] rounded-lg">
+        <div>
+          <div className="grid card rounded-box place-items-center">
+            <div className="join join-vertical lg:join-horizontal">
+              <a
+                href="https://www.linkedin.com/in/joaquin-meneses-0113ba1b7/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn join-item"
+              >
+                LinkedIn
+              </a>
+              <a
+                href="https://github.com/JoaquinMeneses"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn join-item"
+              >
+                GitHub
+              </a>
+              <a
+                href="mailto:joakinmeneses.jm@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn join-item"
+              >
+                Correo
+              </a>
+            </div>
+          </div>
+          <div className="divider">Descargar</div>
+          <div className="grid card rounded-box place-items-center">
+            <a
+              href={CV}
+              download="Joaquin Meneses-Desarrollador Full Stack MERN.pdf"
+              className="btn join-item"
+            >
+              Curriculum
+            </a>
+          </div>
         </div>
       </div>
     </div>
