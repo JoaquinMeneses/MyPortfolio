@@ -11,18 +11,9 @@ export default function NavBar({ scrollPage }) {
   ];
 
   return (
-    <div className="navbar fixed z-10">
-      <div className="flex-1">
-        <a
-          onClick={() => scrollPage("inicio")}
-          className="btn btn-ghost normal-case text-xl flex items-center"
-        >
-          <img src={icon} alt="icon" className="h-8" />
-          <p>Joaquín Meneses</p>
-        </a>
-      </div>
+    <div className="navbar fixed z-10 flex-col bg-[#1b2127]">
       <div className="flex-none">
-        <ul className="menu menu-horizontal px-1">
+        <ul className="menu menu-horizontal px-1 justify-center">
           {sections.map((section, index) => (
             <li key={index}>
               <p onClick={() => scrollPage(section.id)}>

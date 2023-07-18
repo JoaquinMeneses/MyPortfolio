@@ -30,13 +30,30 @@ export default function Experiencia() {
         "Proyecto grupal desarrollado para aprender HTML, CSS, Boostrap y Javascript",
       link: "https://pet-shop-challenge.netlify.app/",
     },
+    {
+      id: "4",
+      text: "MINGA",
+      photo:
+        "https://i.postimg.cc/WzfJnxVV/Captura-de-pantalla-2023-07-18-150853.png",
+      description: "Proyecto grupal desarrollado para aprender el Stack MERN",
+      link: "https://minga-orange-front.vercel.app/",
+    },
+    {
+      id: "5",
+      text: "Mind Tech",
+      photo:
+        "https://i.postimg.cc/KvKsSMzG/Captura-de-pantalla-2023-07-18-151437.png",
+      description:
+        "Proyecto grupal desarrollado para aplicar lo aprendido con el Stack MERN",
+      link: "https://mindtech.store/",
+    },
   ];
 
   return (
     <div className="hero min-h-screen star" id="experiencia">
       <div className="hero-overlay bg-opacity-60"></div>
-      <div className="hero-content">
-        <div className="grid grid-cols-3 gap-4 my-12">
+      <div className="hero-content my-16">
+        <div className="flex flex-wrap justify-center gap-4">
           {experiences.map((experience, index) => (
             <Card
               key={index}
