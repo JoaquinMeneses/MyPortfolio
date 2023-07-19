@@ -10,10 +10,6 @@ const Router = createBrowserRouter([
     element: <App />,
     errorElement: <NotFoundPage />,
   },
-  {
-    path: "*",
-    errorElement: <NotFoundPage />,
-  },
 ]);
 
 export default Router;
