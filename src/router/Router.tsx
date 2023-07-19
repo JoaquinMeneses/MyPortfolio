@@ -1,15 +1,15 @@
 import React from "react";
-import { Routes, Route } from "react-router-dom";
 import App from "../App";
 import NotFoundPage from "../pages/NotFoundPage";
 
-const RouterApp: React.FC = () => {
-  return (
-    <Routes>
-      <Route path="/" element={<App />} />
-      <Route path="*" element={<NotFoundPage />} />
-    </Routes>
-  );
-};
+import { createBrowserRouter } from "react-router-dom";
 
-export default RouterApp;
+const Router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />,
+    errorElement: <NotFoundPage />,
+  },
+]);
+
+export default Router;
