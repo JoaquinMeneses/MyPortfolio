@@ -52,7 +52,7 @@ export default function Experiencia() {
   return (
     <div className="hero min-h-screen star" id="experiencia">
       <div className="hero-overlay bg-opacity-60"></div>
-      <div className="hero-content my-16">
+      <div className="hero-content my-16 ">
         <div className="flex flex-wrap justify-center gap-4">
           {experiences.map((experience, index) => (
             <Card

@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Card({ text, photo, description, link }) {
   return (
-    <div className="card w-96 bg-base-100 shadow-xl hover:border">
+    <div className="card w-96 bg-base-100 shadow-xl hover:outline rounded-none">
       <figure className="px-10 pt-10">
         <img src={photo} alt={text} className="rounded-xl" />
       </figure>
@@ -14,7 +14,7 @@ export default function Card({ text, photo, description, link }) {
             href={link}
             target="_blank"
             rel="noopener noreferrer"
-            className="btn btn-primary"
+            className="btn btn-outline btn-primary rounded-none"
           >
             Ver proyecto
           </a>

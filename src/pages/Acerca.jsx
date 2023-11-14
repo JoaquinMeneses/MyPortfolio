@@ -1,6 +1,6 @@
 import React from "react";
 
-const foto = "https://i.postimg.cc/cLf2xcWX/Joaquin-Meneses-1.png";
+const photo = "https://i.postimg.cc/cLf2xcWX/Joaquin-Meneses-1.png";
 export default function Acerca() {
   return (
     <div className="hero min-h-screen pattern" id="acerca">
@@ -21,14 +21,14 @@ export default function Acerca() {
             </p>
           </article>
           <figure className="hidden sm:contents">
-            <img src={foto} alt="foto de presentación" className="w-[30vw]"/>
+            <img src={photo} alt="foto de presentación" className="w-[30vw] stylePhoto"/>
           </figure>
         </div>
         <section className="chat chat-end flex flex-col">
-          <h1 className="border p-2 btn-outline btn-primary">
+          <h1 className="border-primary p-2 bg-primary text-black">
             "Todo debería hacerse lo más simple posible, pero no más simple."
           </h1>
-          <h2 className="border-b border-l border-r p-2 justify-end btn-outline btn-primary">
+          <h2 className="border-b border-l border-r p-2 justify-end">
             - Albert Einstein
           </h2>
         </section>
