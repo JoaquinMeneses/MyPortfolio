@@ -28,5 +28,10 @@
 }
 
 .stylePhoto {
-  filter: drop-shadow(#78DD82 0rem 0rem 10px);
+  filter: drop-shadow(#78dd82 0rem 0rem 10px);
+  transition: filter 0.5s ease;
+}
+
+.stylePhoto:hover {
+  filter: drop-shadow(#78dd82 0rem 0rem 20px);
 }
