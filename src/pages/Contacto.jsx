@@ -9,7 +9,7 @@ export default function Contacto() {
           <div className="grid card rounded-box place-items-center">
             <div className="join join-vertical lg:join-horizontal">
               <a
-                href="https://www.linkedin.com/in/joaquín-meneses-0113ba1b7/"
+                href="https://www.linkedin.com/in/joaquín-meneses/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn join-item"
