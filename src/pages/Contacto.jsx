@@ -1,4 +1,4 @@
-import CV from "../../public/CV.pdf";
+import CV from "../../public/Joaquín Meneses-Hoja de vida.pdf";
 
 export default function Contacto() {
   return (
@@ -38,7 +38,7 @@ export default function Contacto() {
           <div className="grid card rounded-box place-items-center">
             <a
               href={CV}
-              download="Joaquin Meneses-Desarrollador Full Stack MERN.pdf"
+              download="Joaquin Meneses-Hoja de vida"
               className="btn join-item"
             >
               Curriculum
